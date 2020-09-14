@@ -1,0 +1,299 @@
+.table-message-list{
+  padding: 0;
+  .message{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    &.local-message{
+      align-items: flex-end;
+      .sender-message{
+        span{
+          background-color: #ffb347;
+          color: white;
+        } 
+      }
+    }
+    &.remote-message{
+      align-items: flex-start;
+      .sender-message{
+        span{
+          background-color: #DCDCDC;
+          color: black
+        } 
+      }
+    }
+    .sender-details{
+      display: flex;
+      align-items: center;
+      color: #707070;
+      .sender-name{
+        align-self: flex-end;
+      }
+    }
+    .sender-message{
+      span{
+        margin: auto 0;
+        max-width: 80%;
+      } 
+    }
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .table-message-list{
+    .message{
+      &.local-message{
+        .sender-details{
+          margin-right: 5px;
+        }
+        .sender-message{
+          span{
+            margin-right: 5px;
+          } 
+        }
+      }
+      &.remote-message{
+        .sender-details{
+          margin-left: 5px;
+        }
+        .sender-message{
+          span{
+            margin-left: 5px;
+          } 
+        }
+      }
+      .sender-details{
+        .sender-name{
+          font-size: 15px;
+        }
+        .sender-time{
+          font-size: 12px;
+        }
+      }
+      .sender-message{
+        span{
+          max-width: 80%;
+          font-size: 15px;
+          margin-left: 5px;
+          padding: 1px 5px;
+          border-radius: 5px;
+        } 
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .table-message-list{
+    .message{
+      &.local-message{
+        .sender-details{
+          margin-right: 5px;
+        }
+        .sender-message{
+          span{
+            margin-right: 5px;
+          } 
+        }
+      }
+      &.remote-message{
+        .sender-details{
+          margin-left: 5px;
+        }
+        .sender-message{
+          span{
+            margin-left: 5px;
+          } 
+        }
+      }
+      .sender-details{
+        .sender-name{
+          font-size: 14px;
+        }
+        .sender-time{
+          font-size: 11px;
+        }
+      }
+      .sender-message{
+        span{
+          max-width: 80%;
+          font-size: 14px;
+          padding: 1px 5px;
+          border-radius: 5px;
+        } 
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .table-message-list{
+    .message{
+      &.local-message{
+        .sender-details{
+          margin-right: 4px;
+        }
+        .sender-message{
+          span{
+            margin-right: 4px;
+          } 
+        }
+      }
+      &.remote-message{
+        .sender-details{
+          margin-left: 4px;
+        }
+        .sender-message{
+          span{
+            margin-left: 4px;
+          } 
+        }
+      }
+      .sender-details{
+        .sender-name{
+          font-size: 14px;
+        }
+        .sender-time{
+          font-size: 12px;
+        }
+      }
+      .sender-message{
+        span{
+          max-width: 80%;
+          font-size: 14px;
+          padding: 1px 4px;
+          border-radius: 4px;
+        } 
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .table-message-list{
+    .message{
+      &.local-message{
+        .sender-details{
+          margin-right: 3px;
+        }
+        .sender-message{
+          span{
+            margin-right: 3px;
+          } 
+        }
+      }
+      &.remote-message{
+        .sender-details{
+          margin-left: 3px;
+        }
+        .sender-message{
+          span{
+            margin-left: 3px;
+          } 
+        }
+      }
+      .sender-details{
+        .sender-name{
+          font-size: 13px;
+        }
+        .sender-time{
+          font-size: 11px;
+        }
+      }
+      .sender-message{
+        span{
+          max-width: 80%;
+          font-size: 13px;
+          padding: 1px 4px;
+          border-radius: 4px;
+        } 
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .table-message-list{
+    .message{
+      &.local-message{
+        .sender-details{
+          margin-right: 3px;
+        }
+        .sender-message{
+          span{
+            margin-right: 3px;
+          } 
+        }
+      }
+      &.remote-message{
+        .sender-details{
+          margin-left: 3px;
+        }
+        .sender-message{
+          span{
+            margin-left: 3px;
+          } 
+        }
+      }
+      .sender-details{
+        .sender-name{
+          font-size: 13px;
+        }
+        .sender-time{
+          font-size: 11px;
+        }
+      }
+      .sender-message{
+        span{
+          max-width: 80%;
+          font-size: 13px;
+          padding: 1px 4px;
+          border-radius: 4px;
+        } 
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .table-message-list{
+    .message{
+      &.local-message{
+        .sender-details{
+          margin-right: 2px;
+        }
+        .sender-message{
+          span{
+            margin-right: 2px;
+          } 
+        }
+      }
+      &.remote-message{
+        .sender-details{
+          margin-left: 2px;
+        }
+        .sender-message{
+          span{
+            margin-left: 2px;
+          } 
+        }
+      }
+      .sender-details{
+        .sender-name{
+          font-size: 14px;
+        }
+        .sender-time{
+          font-size: 10px;
+        }
+      }
+      .sender-message{
+        span{
+          max-width: 80%;
+          font-size: 14px;
+          padding: 1px 3px;
+          border-radius: 3px;
+        } 
+      }
+    }
+  }
+}

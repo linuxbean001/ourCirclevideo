@@ -1,0 +1,29 @@
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .sign-in {
+    width: 380px;
+    .title{
+      margin: 10px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sign-in {
+    width: 300px;
+    margin-bottom: 50px;
+    .title{
+      margin: 10px 0;
+    }
+  }
+}

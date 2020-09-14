@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700|Spartan:100,200,300,400,500,600,700,800,900&display=swap');
+@media only screen and (min-width: 1200px) {
+.features {
+    padding: 30px 0;
+    .custom-container {
+        max-width: 1170px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+        .features-inner {
+            max-width: 900px;
+            margin: 0 auto;
+             display: table; 
+             .features-content {
+                width: 33%;
+                float: left;
+                margin-bottom: 30px;
+                padding: 0 3%;
+                h3 {
+                    color: #ffa500;
+                    margin-bottom: 5px;
+                    font-family: 'Spartan', sans-serif;
+                }
+                p {
+                    margin-bottom: 5px;
+                    font-weight: 500;
+                    font-family: 'Spartan', sans-serif;
+                }
+            }
+        }
+    } 
+}
+}
+
+@media only screen and (min-width: 991px) {
+    .features {
+        padding: 30px 0;
+        .custom-container {
+            max-width: 1170px;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            box-sizing: border-box;
+            .features-inner {
+                max-width: 900px;
+                margin: 0 auto;
+                 display: table; 
+                 .features-content {
+                    width: 33%;
+                    float: left;
+                    margin-bottom: 30px;
+                    padding: 0 3%;
+                    h3 {
+                        color: #ffa500;
+                        margin-bottom: 5px;
+                        font-family: 'Spartan', sans-serif;
+                    }
+                    p {
+                        margin-bottom: 5px;
+                        font-weight: 500;
+                        font-family: 'Spartan', sans-serif;
+                    }
+                }
+            }
+        } 
+    }
+    
+    }
+
+
+@media only screen and (max-width: 991px) {
+
+    .features {
+        padding: 30px 0;
+        .custom-container {
+            max-width: 1170px;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            box-sizing: border-box;
+            .features-inner {
+                max-width: 900px;
+                margin: 0 auto;
+                 display: table; 
+                 .features-content {
+                    width: 50%;
+                    padding: 0px 2%;
+                    float: left;
+                    margin-bottom: 30px;
+                    h3 {
+                        color: #ffa500;
+                        margin-bottom: 5px;
+                        font-family: 'Spartan', sans-serif;
+                        font-size: 14px;
+                    }
+                    p {
+                        font-size: 13px;
+                        line-height: 20px;
+                        margin-bottom: 5px;
+                        font-weight: 500;
+                        font-family: 'Spartan', sans-serif;
+                    }
+                }
+            }
+        } 
+    }
+    
+    }
+
+
+@media only screen and (max-width: 767px) {
+.features {
+    padding: 30px 0;
+    .custom-container {
+        max-width: 1170px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+        .features-inner {
+            max-width: 900px;
+            margin: 0 auto;
+             display: table; 
+             .features-content {
+                width: 50%;
+                padding: 0px 2%;
+                float: left;
+                margin-bottom: 30px;
+                h3 {
+                    color: #ffa500;
+                    margin-bottom: 5px;
+                    font-family: 'Spartan', sans-serif;
+                    font-size: 14px;
+                }
+                p {
+                    font-size: 13px;
+                    line-height: 20px;
+                    margin-bottom: 5px;
+                    font-weight: 500;
+                    font-family: 'Spartan', sans-serif;
+                }
+            }
+        }
+    } 
+}
+
+}

@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700|Spartan:100,200,300,400,500,600,700,800,900&display=swap');
+@media only screen and (min-width: 1200px) {
+  .copyright-main {
+    text-align: center;
+      .copyright-main-inner {
+        display: flex;
+        align-items: center;
+          .copyright-main-image {
+            padding: 20px;
+            width: 41%;
+            img {
+              width:100%;
+            }
+          }
+          .copyright-main-content {
+            width: 18%;
+              p {
+                font-size: 14px;
+                font-weight: 400;
+                color: #222;
+                line-height: 27px;
+                font-family: 'Spartan', sans-serif;
+              }
+          }
+      }
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .copyright-main {
+    text-align: center;
+      .copyright-main-inner {
+        display: flex;
+        align-items: center;
+          .copyright-main-image {
+            padding: 20px;
+            width: 41%;
+            img {
+              width:100%;
+            }
+          }
+          .copyright-main-content {
+            width: 18%;
+              p {
+                font-size: 14px;
+                font-weight: 400;
+                color: #222;
+                line-height: 27px;
+                font-family: 'Spartan', sans-serif;
+              }
+          }
+      }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .copyright-main {
+    text-align: center;
+      .copyright-main-inner {
+        display: block;
+        align-items: center;
+          .copyright-main-image {
+            padding: 20px;
+            width: 100%;
+
+            img {
+              width:100%;
+            }
+          }
+          .hide-mbl {
+            display: none;
+        }
+          .copyright-main-content {
+            width: 100%;
+              p {
+                font-size: 14px;
+                font-weight: 400;
+                color: #222;
+                line-height: 27px;
+                font-family: 'Spartan', sans-serif;
+              }
+          }
+      }
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .copyright-main {
+    text-align: center;
+      .copyright-main-inner {
+        display: block;
+        align-items: center;
+          .copyright-main-image {
+            padding: 20px;
+            width: 100%;
+
+            img {
+              width:100%;
+            }
+          }
+          .hide-mbl {
+            display: none;
+        }
+          .copyright-main-content {
+            width: 100%;
+              p {
+                font-size: 14px;
+                font-weight: 400;
+                color: #222;
+                line-height: 27px;
+                font-family: 'Spartan', sans-serif;
+              }
+          }
+      }
+  }
+}

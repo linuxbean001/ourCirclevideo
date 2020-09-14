@@ -1,0 +1,385 @@
+.attendee-grid-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  .table{
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .circle{
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      .user{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        .circle-video{
+          border-radius: 50%;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+        img{
+          width: 100%;
+        }
+        .user-name{
+          z-index: 10;
+          background-color: #FFFFFFC0;
+          position: absolute;
+          color: black;
+          align-self: flex-end;
+          text-align: center;
+          font-weight: 500;
+        }
+      }
+      .unoccupied{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .select-your-circle{
+          text-align: center;
+        }
+      }
+    }
+    .table-ref{
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      object-fit: cover;
+      z-index: 2;
+      .table-image{
+        width: 100%;
+        z-index: 1;
+        border-radius: 50%;
+        opacity: 1;
+      }
+    }
+    .table-name{
+      font-weight: 400;
+      z-index: 3;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+    }
+    .enter-table-text{
+      z-index: 3;
+      text-align: center;
+      position: absolute;
+    }
+    .table-occupied{
+      animation-name: border-thickness-and-color;
+      animation-duration: 1.5s;
+      animation-iteration-count: 1;
+    }
+  } 
+}
+
+
+
+
+@media only screen and (min-width: 1400px) {
+  .attendee-grid-item{
+    height: 500px;
+    .table{
+      border-radius: 50%;
+      background-color: white;
+      width: 200px;
+      height: 200px;
+      .circle{
+        border-radius: 50%;
+        background-color: white;
+        .user{
+          .user-name{
+            font-size: 14px;
+            max-width: 120px;
+          }
+        }
+        .unoccupied{
+          .select-your-circle{
+            font-size: 14px;
+          }
+        }
+      }
+      .circle-lobby{
+        border: 5px solid gold;
+      }
+      .circle-table{
+        border: 5px solid #ffb347;
+      }
+      .circle-unoccupied{
+        border: 5px solid #C0C0C0;
+      }
+      .table-ref{
+        border: 5px solid #ffb347;
+      }
+      .table-name{
+        font-size: 25px;
+      }
+      .enter-table-text{
+        top: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .attendee-grid-item{
+    height: 400px;
+    .table{
+      border-radius: 50%;
+      background-color: white;
+      width: 175px;
+      height: 175px;
+      .circle{
+        border-radius: 50%;
+        background-color: white;
+        .user{
+          .user-name{
+            font-size: 14px;
+          }
+        }
+        .unoccupied{
+          .select-your-circle{
+            font-size: 14px;
+            max-width: 100px;
+          }
+        }
+      }
+      .circle-lobby{
+        border: 5px solid gold;
+      }
+      .circle-table{
+        border: 5px solid #ffb347;
+      }
+      .circle-unoccupied{
+        border: 5px solid #C0C0C0;
+      }
+      .table-ref{
+        border: 5px solid #ffb347;
+      }
+      .table-name{
+        font-size: 22px;
+      }
+      .enter-table-text{
+        top: 20px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .attendee-grid-item{
+    height: 350px;
+    .table{
+      border-radius: 50%;
+      background-color: white;
+      width: 150px;
+      height: 150px;
+      .circle{
+        border-radius: 50%;
+        background-color: white;
+        .user{
+          .user-name{
+            font-size: 12px;
+            max-width: 100px;   
+          }
+        }
+        .unoccupied{
+          .select-your-circle{
+            font-size: 12px;
+          }
+        }
+      }
+      .circle-lobby{
+        border: 4px solid gold;
+      }
+      .circle-table{
+        border: 4px solid #ffb347;
+      }
+      .circle-unoccupied{
+        border: 4px solid #C0C0C0;
+      }
+      .table-ref{
+        border: 4px solid #ffb347;
+      }
+      .table-name{
+        font-size: 20px;
+      }
+      .enter-table-text{
+        top: 20px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  .attendee-grid-item{
+    height: 325px;
+    .table{
+      border-radius: 50%;
+      background-color: white;
+      width: 125px;
+      height: 125px;
+      .circle{
+        border-radius: 50%;
+        background-color: white;
+        .user{
+          .user-name{
+            font-size: 11px;
+            max-width: 80px; 
+          }
+        }
+        .unoccupied{
+          .select-your-circle{
+            font-size: 11px;
+          }
+        }
+      }
+      .circle-lobby{
+        border: 4px solid gold;
+      }
+      .circle-table{
+        border: 4px solid #ffb347;
+      }
+      .circle-unoccupied{
+        border: 4px solid #C0C0C0;
+      }
+      .table-ref{
+        border: 4px solid #ffb347;
+      }
+      .table-name{
+        font-size: 16px;
+      }
+      .enter-table-text{
+        top: 20px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .attendee-grid-item{
+    height: 250px;
+    .table{
+      border-radius: 50%;
+      background-color: white;
+      width: 100px;
+      height: 100px;
+      .circle{
+        border-radius: 50%;
+        background-color: white;
+        .user{
+          .user-name{
+            font-size: 10px;
+            max-width: 85px; 
+          }
+        }
+        .unoccupied{
+          .select-your-circle{
+            font-size: 10px;
+          }
+        }
+      }
+      .circle-lobby{
+        border: 4px solid gold;
+      }
+      .circle-table{
+        border: 4px solid #ffb347;
+      }
+      .circle-unoccupied{
+        border: 4px solid #C0C0C0;
+      }
+      .table-ref{
+        border: 4px solid #ffb347;
+      }
+      .table-name{
+        font-size: 13px;
+      }
+      .enter-table-text{
+        top: 18px;
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .attendee-grid-item{
+    height: 350px;
+    .table{
+      border-radius: 50%;
+      background-color: white;
+      width: 150px;
+      height: 150px;
+      .circle{
+        border-radius: 50%;
+        background-color: white;
+        .user{
+          .user-name{
+            font-size: 12px;
+            max-width: 100px;
+          }
+        }
+        .unoccupied{
+          .select-your-circle{
+            font-size: 12px;
+          }
+        }
+      }
+      .circle-lobby{
+        border: 4px solid gold;
+      }
+      .circle-table{
+        border: 4px solid #ffb347;
+      }
+      .circle-unoccupied{
+        border: 4px solid #C0C0C0;
+      }
+      .table-ref{
+        border: 4px solid #ffb347;
+      }
+      .table-name{
+        font-size: 20px;
+      }
+      .enter-table-text{
+        top: 18px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@keyframes border-thickness-and-color {
+  0% {
+    border-color: #ffb347;
+    transform: scale(1);
+  }
+  50% {
+    border-color: #f59000;
+    transform: scale(1.05);
+  }
+  100% {
+    border-color: #ffb347;
+    transform: scale(1);
+  }
+}

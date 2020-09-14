@@ -1,0 +1,138 @@
+.edit-icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  z-index: 10;
+  .edit-image-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .edit-text-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .edit-icons{
+    width: 80px;
+    .edit-image-icon{
+      width: 35px;
+      height: 35px;
+      font-size: 25px;
+    }
+    .edit-text-icon{
+      width: 35px;
+      height: 35px;
+      font-size: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .edit-icons{
+    width: 80px;
+    .edit-image-icon{
+      width: 35px;
+      height: 35px;
+      font-size: 25px;
+    }
+    .edit-text-icon{
+      width: 35px;
+      height: 35px;
+      font-size: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .edit-icons{
+    width: 70px;
+    .edit-image-icon{
+      width: 30px;
+      height: 30px;
+      font-size: 22px;
+    }
+    .edit-text-icon{
+      width: 30px;
+      height: 30px;
+      font-size: 22px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  .edit-icons{
+    width: 70px;
+    .edit-image-icon{
+      width: 30px;
+      height: 30px;
+      font-size: 22px;
+    }
+    .edit-text-icon{
+      width: 30px;
+      height: 30px;
+      font-size: 22px;
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .edit-icons{
+    width: 55px;
+    .edit-image-icon{
+      width: 25px;
+      height: 25px;
+      font-size: 18px;
+    }
+    .edit-text-icon{
+      width: 25px;
+      height: 25px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .edit-icons{
+    width: 70px;
+    .edit-image-icon{
+      width: 30px;
+      height: 30px;
+      font-size: 22px;
+    }
+    .edit-text-icon{
+      width: 30px;
+      height: 30px;
+      font-size: 22px;
+    }
+  }
+}
+
+@keyframes color {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: #ffb347F0;
+  }
+  100% {
+    background-color: white;
+  }
+}

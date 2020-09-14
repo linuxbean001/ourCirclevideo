@@ -1,0 +1,37 @@
+.event-page{
+  display: flex;
+  justify-content: center;
+  .session-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .main-event{
+      display: grid;
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .session-container{
+    .main-event{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(autofill, auto);
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .session-container{
+    .main-event{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(autofill, auto);
+    }
+  }
+}
+
+
+

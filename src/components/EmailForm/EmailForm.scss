@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700|Spartan:100,200,300,400,500,600,700,800,900&display=swap');
+@media only screen and (min-width: 1200px) {
+  .email-form {
+      width: 100%;
+      .email-form-form {
+          max-width: 550px;
+          margin: 0 auto;
+      .email-field {
+          outline: none;
+          width: 60%;
+          padding: 0 15px;
+          height: 50px;
+          box-sizing: border-box;
+          background: #f5f8ff;
+          border: 2px solid #333;
+          font-size: 15px;
+          float: left;
+          letter-spacing: 1px;
+          font-weight: 500;
+          color: #333;
+          font-family: 'Spartan', sans-serif;
+      }
+      .btn-field {
+          outline: none;
+          width: 40%;
+          min-height: 50px;
+          padding: 10.2px 0;
+          box-sizing: border-box;
+          background-color: var(--main-button-color);
+          color: #fff;
+          border: none;
+          font-size: 20px;
+          font-weight: 600;
+          font-family: 'Spartan', sans-serif;
+          letter-spacing: 0.7px;
+          cursor: pointer;
+          transition: .1s ease-in;
+          -webkit-transition: .1s ease-in;
+          -moz-transition: .1s ease-in;
+          -o-transition: .1s ease-in;
+          -ms-transition: .1s ease-in;
+          &:hover{
+            background-color: var(--main-button-hover-color);
+          }
+      }
+  }
+      ul {
+          margin: 10px 0;
+          li {
+              display: initial;
+              margin-right: 20px;
+              font-size: 12px;
+              font-weight: 600;
+                  .tick-img {
+                      width: 2%;
+                      padding: 2px;
+                  }
+          }
+      }
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .email-form {
+    width: 100%;
+      .email-form-form {
+          max-width: 550px;
+          margin: 0 auto;
+      .email-field {
+          outline: none;
+          width: 60%;
+          padding: 0 15px;
+          height: 50px;
+          box-sizing: border-box;
+          background: #f5f8ff;
+          border: 2px solid #333;
+          font-size: 15px;
+          float: left;
+          letter-spacing: 1px;
+          font-weight: 500;
+          color: #333;
+          font-family: 'Spartan', sans-serif;
+      }
+      .btn-field {
+          outline: none;
+          width: 40%;
+          min-height: 50px;
+          padding: 10.2px 0;
+          box-sizing: border-box;
+          background-color: var(--main-button-color);
+          color: #fff;
+          border: none;
+          font-size: 20px;
+          font-weight: 600;
+          font-family: 'Spartan', sans-serif;
+          letter-spacing: 0.7px;
+          cursor: pointer;
+          transition: .1s ease-in;
+          -webkit-transition: .1s ease-in;
+          -moz-transition: .1s ease-in;
+          -o-transition: .1s ease-in;
+          -ms-transition: .1s ease-in;
+          &:hover{
+            background-color: var(--main-button-hover-color);
+          }
+      }
+  }
+      ul {
+          margin: 10px 0;
+          li {
+              display: initial;
+              margin-right: 20px;
+              font-size: 12px;
+              font-weight: 600;
+                  .tick-img {
+                      width: 2%;
+                      padding: 2px;
+                  }
+          }
+      }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .email-form {
+      width: 100%;
+      .email-form-form {
+          max-width: 550px;
+          margin: 0 auto;
+      .email-field {
+          outline: none;
+          width: 60%;
+          padding: 0 15px;
+          box-sizing: border-box;
+          background: #f5f8ff;
+          border: 2px solid #333;
+          float: left;
+          letter-spacing: 1px;
+          font-weight: 500;
+          color: #333;
+          font-family: 'Spartan', sans-serif;
+          height: 40px;
+          font-size: 12px;
+      }
+      .btn-field {
+          outline: none;
+          width: 40%;
+          font-size: 13px;
+          min-height: 40px;
+          padding: 10.2px 0;
+          box-sizing: border-box;
+          background-color: var(--main-button-color);
+          color: #fff;
+          border: none;
+          font-weight: 600;
+          font-family: 'Spartan', sans-serif;
+          letter-spacing: 0.7px;
+          cursor: pointer;
+          transition: .1s ease-in;
+          -webkit-transition: .1s ease-in;
+          -moz-transition: .1s ease-in;
+          -o-transition: .1s ease-in;
+          -ms-transition: .1s ease-in;
+          &:hover{
+            background-color: var(--main-button-hover-color);
+          }
+      }
+  }
+      ul {
+          margin: 10px 0;
+          li {
+              display: initial;
+              margin-right: 5px;
+              font-size: 8px;
+              font-weight: 600;
+                  .tick-img {
+                      width: 2%;
+                      padding: 2px;
+                  }
+          }
+
+      }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .email-form {
+      width: 100%;
+      .email-form-form {
+          max-width: 550px;
+          margin: 0 auto;
+      .email-field {
+          outline: none;
+          width: 60%;
+          padding: 0 15px;
+          box-sizing: border-box;
+          background: #f5f8ff;
+          border: 2px solid #333;
+          float: left;
+          letter-spacing: 1px;
+          font-weight: 500;
+          color: #333;
+          font-family: 'Spartan', sans-serif;
+          height: 40px;
+          font-size: 12px;
+      }
+      .btn-field {
+          outline: none;
+          width: 40%;
+          font-size: 13px;
+          min-height: 40px;
+          padding: 10.2px 0;
+          box-sizing: border-box;
+          background-color: var(--main-button-color);
+          color: #fff;
+          border: none;
+          font-weight: 600;
+          font-family: 'Spartan', sans-serif;
+          letter-spacing: 0.7px;
+          cursor: pointer;
+          transition: .1s ease-in;
+          -webkit-transition: .1s ease-in;
+          -moz-transition: .1s ease-in;
+          -o-transition: .1s ease-in;
+          -ms-transition: .1s ease-in;
+          &:hover{
+            background-color: var(--main-button-hover-color);
+          }
+      }
+  }
+      ul {
+          margin: 10px 0;
+          padding-left: 0;
+          li {
+              display: initial;
+              margin-right: 5px;
+              font-size: 8px;
+              font-weight: 600;
+                  .tick-img {
+                      width: 2%;
+                      padding: 0px;
+                  }
+          }
+
+      }
+  }
+}

@@ -1,0 +1,59 @@
+.active-state{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+}
+.active{
+  background-color: green;
+}
+.inactive{
+  background-color: red;
+}
+
+@media only screen and (min-width: 1200px) {
+  .not-in-modal{
+    font-size: 20px;
+    height: 30px;
+    padding: 0 10px;
+    width: 100px;
+  }
+  .in-modal{
+    font-size: 20px;
+    height: 30px;
+    padding: 0 10px;
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .not-in-modal{
+    font-size: 19px;
+    height: 28px;
+    padding: 0 8px;
+    width: 90px;
+  }
+  .in-modal{
+    font-size: 20px;
+    height: 30px;
+    padding: 0 10px;
+    width: 100px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .not-in-modal{
+    font-size: 18px;
+    height: 25px;
+    padding: 0 6px;
+    width: 80px;
+  }
+  .in-modal{
+    font-size: 18px;
+    height: 30px;
+    padding: 0 10px;
+    width: 80px;
+  }
+}

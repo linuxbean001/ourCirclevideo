@@ -1,0 +1,207 @@
+.full-screen-mode{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 100%;
+  overflow: auto;
+  .video-and-chat-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    .full-screen-video-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      object-fit: cover;
+      overflow: hidden;
+      position: relative;
+      background-color: white;
+      &:hover{
+        .full-screen-icon{
+          display: block;
+        }
+      }
+      .host-video{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        z-index: 1;
+      }
+      .full-screen-icon{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 5px 10px;
+        display: none;
+        cursor: pointer;
+        z-index: 3;
+      }
+      .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        position: absolute;
+        background-color: white;
+        z-index: 2;
+        img{
+          width: 100%;
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .full-screen-mode{
+    .video-and-chat-container{
+      .full-screen-video-container{
+        width: 1290px;
+        height: 730px;
+        border: 5px solid gold;
+        .full-screen-icon{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  .full-screen-mode{
+    .video-and-chat-container{
+      .full-screen-video-container{
+        width: 1000px;
+        height: 562px;
+        border: 5px solid gold;
+        .full-screen-icon{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .full-screen-mode{
+    .video-and-chat-container{
+      .full-screen-video-container{
+        width: 800px;
+        height: 450px;
+        border: 5px solid gold;
+        .full-screen-icon{
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .full-screen-mode{
+    .video-and-chat-container{
+      .full-screen-video-container{
+        width: 650px;
+        height: 365px;
+        border: 5px solid gold;
+        .full-screen-icon{
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .full-screen-mode{
+    .video-and-chat-container{
+      .full-screen-video-container{
+        width: 550px;
+        height: 309px;
+        border: 5px solid gold;
+        .full-screen-icon{
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .full-screen-mode{
+    .video-and-chat-container{
+      flex-direction: column;
+      align-items: center;
+      .full-screen-video-container{
+        width: 550px;
+        height: 309px;
+        border: 5px solid gold;
+        .full-screen-icon{
+          font-size: 25px;
+        }
+      }
+      .full-screen-event-chat{
+        width: 100%;
+        max-width: 450px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .full-screen-mode{
+    .video-and-chat-container{
+      flex-direction: column;
+      align-items: center;
+      .full-screen-video-container{
+        width: 320px;
+        height: 180px;
+        border: 5px solid gold;
+        .full-screen-icon{
+          font-size: 25px;
+        }
+      }
+      .full-screen-event-chat{
+        width: 320px;
+        max-width: 450px;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .full-screen-mode{
+    .video-and-chat-container{
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      .full-screen-video-container{
+        height: 100%;
+        width: auto;
+        border: 5px solid gold;
+        .full-screen-icon{
+          font-size: 25px;
+        }
+      }
+      .full-screen-event-chat{
+        width: 100%;
+        max-width: 450px;
+      }
+    }
+  }
+}
+

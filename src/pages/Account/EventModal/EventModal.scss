@@ -1,0 +1,220 @@
+.event-modal-page{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  .event-modal{
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .exit-icon{
+      position: absolute;
+      top:0;
+      right:0;
+      padding: 5px;
+      cursor: pointer;
+    }
+    .title{
+      text-transform: capitalize;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+    }
+    .event-details-container{
+      .sub-title{
+        text-transform: capitalize;
+        color: #0088aa;
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 1px solid grey;
+      }
+      .event-detail{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .event-detail-label{
+          font-weight: bold;
+        }
+      }
+    }
+    .event-controls-container{
+      display: flex;
+      flex-direction: column;
+      .sub-title{
+        text-transform: capitalize;
+        color: #0088aa;
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 1px solid grey;
+        border-top: 1px solid grey;
+      }
+      .event-controls{
+        .event-control{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .event-control-label{
+            text-transform: capitalize;
+          }
+          .control-button{
+            cursor: pointer;
+            .join-event{
+              background-color: var(--main-button-color);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 5px;
+              color: white;
+              &:hover{
+                background-color: var(--main-button-hover-color);
+              }
+            }
+            .delete{
+              background-color: blue;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 5px;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .event-modal-page{
+    .event-modal{
+      width: 500px;
+      padding: 20px;
+      .exit-icon{
+        font-size: 30px;
+      }
+      .title{
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      .event-details-container{
+        font-size: 18px;
+        .sub-title{
+          font-size: 22px;
+          margin-bottom: 5px;
+        }
+        .event-detail{
+          height: 30px;
+          .event-detail-label{
+            font-weight: bold;
+          }
+        }
+      }
+      .event-controls-container{
+        .sub-title{
+          font-size: 22px;
+          margin-bottom: 10px;
+          padding-top: 20px;
+        }
+        .event-controls{
+          .event-control{
+            height: 50px;
+            .event-control-label{
+              font-size: 18px;
+              margin-right: 10px;
+            }
+            .control-button{
+              .join-event{
+                font-size: 20px;
+                height: 30px;
+                padding: 0 10px;
+                width: 100px;
+              }
+              .delete{
+                font-size: 20px;
+                height: 30px;
+                padding: 0 10px;
+                width: 100px;
+              }
+            }
+          }
+          .join-control{
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .event-modal-page{
+    .event-modal{
+      width: 350px;
+      padding: 15px;
+      .exit-icon{
+        font-size: 25px;
+      }
+      .title{
+        font-size: 25px;
+        margin-bottom: 15px;
+      }
+      .event-details-container{
+        font-size: 16px;
+        .sub-title{
+          font-size: 20px;
+          margin-bottom: 5px;
+        }
+        .event-detail{
+          height: 25px;
+          .event-detail-label{
+            font-weight: bold;
+          }
+        }
+      }
+      .event-controls-container{
+        .sub-title{
+          font-size: 20px;
+          margin-bottom: 10px;
+          padding-top: 15px;
+        }
+        .event-controls{
+          .event-control{
+            height: 50px;
+            .event-control-label{
+              font-size: 16px;
+              margin-right: 10px;
+            }
+            .control-button{
+              .join-event{
+                font-size: 18px;
+                height: 30px;
+                padding: 0 10px;
+                width: 80px;
+              }
+              .delete{
+                font-size: 18px;
+                height: 30px;
+                padding: 0 10px;
+                width: 80px;
+              }
+            }
+          }
+          .join-control{
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

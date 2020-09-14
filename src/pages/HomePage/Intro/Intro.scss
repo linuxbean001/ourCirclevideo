@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700|Spartan:100,200,300,400,500,600,700,800,900&display=swap');
+@media only screen and (min-width: 1200px) {
+  .hero-section{
+    position: relative;
+    font-family: 'Spartan', sans-serif;
+    margin-top: 50px;
+    .custom-container {
+      max-width: 1170px;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      box-sizing: border-box;
+      .hero-section-inner {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        .hero-content {
+          width: 65%;
+          h1 {
+            color: #ffa500;
+            font-size: 45px;
+          }
+          h5 {
+            color: #333;
+            font-size: 17px;
+            margin: 35px 0;
+          }
+          .email-form-container{
+            width: 100%;
+          }
+        }
+        .hero-image {
+          width:35%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img{
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .hero-section{
+      position: relative;
+      font-family: 'Spartan', sans-serif;
+      margin-top: 50px;
+    .custom-container {
+        max-width: 1170px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+        .hero-section-inner {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            .hero-content {
+                width: 65%;
+                h1 {
+                    color: #ffa500;
+                    font-size: 45px;
+                }
+                h5 {
+                    color: #333;
+                    font-size: 17px;
+                    margin: 35px 0;
+                }
+                .email-form-container{
+                  width: 100%;
+                }
+            }
+            .hero-image {
+                width:35%;
+                img{
+                    width:100%;
+                }
+            }
+        }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .hero-section{
+      position: relative;
+      font-family: 'Spartan', sans-serif;
+      margin-top: 50px;
+    .custom-container {
+        max-width: 1170px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+        .hero-section-inner {
+            display: block;
+            align-items: center;
+            text-align: center;
+            .hero-content {
+                width: 100%;
+                h1 {
+                    color: #ffa500;
+                    font-size: 25px;
+                }
+                h5 {
+                    color: #333;
+                    font-size: 14px;
+                    margin: 35px 0;
+                }
+                .email-form-container{
+                  width: 100%;
+                }
+            }
+            .hero-image {
+                width: 100%;
+                padding: 10%;
+                img{
+                    width:100%;
+                }
+            }
+        }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-section{
+      position: relative;
+      font-family: 'Spartan', sans-serif;
+      margin-top: 40px;
+    .custom-container {
+        max-width: 1170px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+        .hero-section-inner {
+            display: block;
+            align-items: center;
+            text-align: center;
+            .hero-content {
+                width: 100%;
+                h1 {
+                    color: #ffa500;
+                    font-size: 25px;
+                }
+                h5 {
+                    color: #333;
+                    font-size: 14px;
+                    margin: 35px 0;
+                }
+                .email-form-container{
+                  width: 100%;
+                }
+            }
+            .hero-image {
+                width: 100%;
+                padding: 10%;
+                img{
+                    width:100%;
+                }
+            }
+        }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700|Spartan:100,200,300,400,500,600,700,800,900&display=swap');
+@media only screen and (min-width: 1200px) {
+    .ideal-logos-main {
+        text-align: center;
+        padding: 0;
+        font-family: 'Spartan', sans-serif;
+        .section-title {
+          margin-top: 50px;
+        }   
+        .section-title h2 {
+            color: #ffa500;
+            font-size: 45px;
+        }
+        .ideal-logos-main-inner{
+            ul {
+                li {
+                display: inline-block;
+                width: 24%;
+                margin-bottom: 20px;
+                img{
+                    width:100%;
+                }
+            }
+        }
+        }
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .ideal-logos-main {
+        text-align: center;
+        padding: 0;
+        font-family: 'Spartan', sans-serif;
+        .section-title {
+          margin-top: 50px;
+        }   
+        .section-title h2 {
+            color: #ffa500;
+            font-size: 45px;
+        }
+        .ideal-logos-main-inner{
+            ul {
+                padding:0px;
+                li {
+                display: inline-block;
+                width: 24%;
+                margin-bottom: 20px;
+                img{
+                    width:100%;
+                }
+            }
+        }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .ideal-logos-main {
+        text-align: center;
+        padding: 0;
+        font-family: 'Spartan', sans-serif;
+        .section-title {
+          margin-top: 50px;
+        }   
+        .section-title h2 {
+            color: #ffa500;
+            font-size: 45px;
+        }
+        .ideal-logos-main-inner{
+            ul {
+                padding:0px;
+                    li {
+                    display: inline-block;
+                    width: 32%;
+                    margin-bottom: 10px;
+                    img{
+                        width:100%;
+                      }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .ideal-logos-main {
+        text-align: center;
+        padding: 0;
+        font-family: 'Spartan', sans-serif;
+        .section-title {
+          margin-top: 50px;
+        }   
+        .section-title h2 {
+            color: #ffa500;
+            font-size: 45px;
+        }
+        .ideal-logos-main-inner{
+            ul {
+                padding:0px;
+                    li {
+                    display: inline-block;
+                    width: 32%;
+                    margin-bottom: 10px;
+                    img{
+                        width:100%;
+                      }
+                }
+            }
+        }
+    }
+}

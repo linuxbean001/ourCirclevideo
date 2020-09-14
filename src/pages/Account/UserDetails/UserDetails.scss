@@ -1,0 +1,209 @@
+.user-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+  .inside-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .form-title{
+      text-transform: capitalize;
+    }
+    .form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .input-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .label{
+          text-transform: capitalize;
+          color: #0088aa;
+          font-weight: bold;
+        }
+        .circle-container{
+          display: flex;
+          justify-content: center;
+          .circle{
+            border-radius: 50%;
+            object-fit: cover;
+            overflow: hidden;
+            img{
+              width: 100%;
+            }
+          }
+        }
+      }
+      .submit{
+        .submit-button{
+          -webkit-appearance: none;
+          -webkit-border-radius: 0px;
+          border:none;
+          border-radius: 5px;
+          background-color: var(--main-button-color);
+          color: var(--main-button-text-color);
+          transition: background-color 0.4s;
+          padding: 0 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: auto;
+          &:disabled{
+            background-color: #dddddd;
+          }
+          &:hover:enabled{
+            background-color: var(--main-button-hover-color);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .user-details{
+    width: 500px;
+    height: max-content;
+    //overflow:auto;
+    padding: 50px;
+    .inside-container{
+      .form-title{
+        font-size: 30px;
+        margin-bottom: 40px;
+      }
+      .form{
+        .input-section{
+          margin-bottom: 30px;
+          .label{
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+          .input{
+            padding: 15px 12px;
+            font-size: 20px;
+          }
+          .picture-preview{
+            margin-top: 50px;
+          }
+          .circle-container{
+            margin-top: 25px;
+            .circle{
+              width: 250px;
+              height: 250px;
+              border: 5px solid gold;
+            }
+          }
+        }
+        .submit{
+          .submit-button{
+            font-size: 25px;
+            height: 50px;
+          }
+        }
+      } 
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .user-details{
+    width: 400px;
+    height: max-content;
+    //overflow:auto;
+    padding: 40px;
+    .inside-container{
+      .form-title{
+        font-size: 25px;
+        margin-bottom: 30px;
+      }
+      .form{
+        .input-section{
+          margin-bottom: 20px;
+          .label{
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+          .input{
+            padding: 10px 8px;
+            font-size: 16px;
+          }
+          .picture-preview{
+            margin-top: 50px;
+          }
+          .circle-container{
+            margin-top: 25px;
+            .circle{
+              width: 225px;
+              height: 225px;
+              border: 5px solid gold;
+            }
+          }
+        }
+        .submit{
+          .submit-button{
+            font-size: 22px;
+            height: 45px;
+          }
+        }
+      } 
+    }
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .user-details{
+    width: 320px;
+    height: max-content;
+    padding: 20px;
+    .inside-container{
+      .form-title{
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+      .form{
+        .input-section{
+          margin-bottom: 15px;
+          .label{
+            font-size: 12px;
+            margin-bottom: 6px;
+          }
+          .input{
+            padding: 8px 6px;
+            font-size: 16px;
+          }
+          .picture-preview{
+            margin-top: 40px;
+          }
+          .circle-container{
+            margin-top: 20px;
+            .circle{
+              width: 200px;
+              height: 200px;
+              border: 5px solid gold;
+            }
+          }
+        }
+        .submit{
+          .submit-button{
+            font-size: 18px;
+            height: 40px;
+          }
+        }
+      } 
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .user-details{
+    margin-top: 20px;
+  }
+}

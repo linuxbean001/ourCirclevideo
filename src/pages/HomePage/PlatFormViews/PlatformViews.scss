@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700|Spartan:100,200,300,400,500,600,700,800,900&display=swap');
+@media only screen and (min-width: 1200px) {
+.conference-main {
+    position: relative;
+    padding: 30px 0;
+    .custom-container {
+        max-width: 1170px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        box-sizing: border-box;
+        .conference-main-inner {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            
+            .conference-main-content {
+                width: 50%;
+                padding: 0 5%;
+                h3 {
+                    color: #ffa500;
+                    font-size: 30px;
+                    font-family: 'Spartan', sans-serif;
+                }
+                p {
+                    font-size: 21px;
+                    margin: 15px 0;
+                    line-height: 32px;
+                    font-weight: 500;
+                    font-family: 'Spartan', sans-serif;
+                }
+            }
+            .conference-image {
+                width:50%;
+                img{
+                    width:100%;
+                }
+            }
+        }
+
+    }
+}
+}
+
+@media only screen and (min-width: 991px) {
+    .conference-main {
+        position: relative;
+        padding: 30px 0;
+        .custom-container {
+            max-width: 1170px;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            box-sizing: border-box;
+            .conference-main-inner {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                
+                .conference-main-content {
+                    width: 50%;
+                    padding: 0 5%;
+                    h3 {
+                        color: #ffa500;
+                        font-size: 30px;
+                        font-family: 'Spartan', sans-serif;
+                    }
+                    p {
+                        font-size: 21px;
+                        margin: 15px 0;
+                        line-height: 32px;
+                        font-weight: 500;
+                        font-family: 'Spartan', sans-serif;
+                    }
+                }
+                .conference-image {
+                    width:50%;
+                    img{
+                        width:100%;
+                    }
+                }
+            }
+    
+        }
+    }
+    }
+
+@media only screen and (max-width: 991px) {
+    .conference-main {
+        position: relative;
+        padding: 10px 0;
+        .custom-container {
+            max-width: 1170px;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            box-sizing: border-box;
+            .conference-main-inner {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                flex-direction: column;
+                .conference-main-content {
+                    width: 100%;
+                    margin-top: 20px;
+                    h3 {
+                        color: #ffa500;
+                        font-size: 24px;
+                        font-family: 'Spartan', sans-serif;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 23px;
+                        margin: 15px 0;
+                        font-weight: 500;
+                        font-family: 'Spartan', sans-serif;
+                    }
+                }
+                .con-order{
+                    order: 2;
+                }
+                .conference-image {
+                    width: 100%;
+                    img{
+                        width:100%;
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .conference-main {
+        position: relative;
+        padding: 10px 0;
+        .custom-container {
+            max-width: 1170px;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            box-sizing: border-box;
+            .conference-main-inner {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                flex-direction: column;
+                .conference-main-content {
+                    width: 100%;
+                    margin-top: 20px;
+                    h3 {
+                        color: #ffa500;
+                        font-size: 24px;
+                        font-family: 'Spartan', sans-serif;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 23px;
+                        margin: 15px 0;
+                        font-weight: 500;
+                        font-family: 'Spartan', sans-serif;
+                    }
+                }
+                .con-order{
+                    order: 2;
+                }
+                .conference-image {
+                    width: 100%;
+                    img{
+                        width:100%;
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+

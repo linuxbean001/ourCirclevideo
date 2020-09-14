@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700|Spartan:100,200,300,400,500,600,700,800,900&display=swap');
+@media only screen and (min-width: 1200px) {
+  .footer-main {
+    background: #fff;
+    padding: 50px 0;
+    .custom-container {
+      max-width: 1170px;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      box-sizing: border-box;
+      .footer-content{
+        text-align: center;
+        h2{
+          color: #ffa500;
+          font-size: 40px;
+          margin-bottom: 40px;
+        }
+        .email-form-container{
+          width: 100%;
+        }
+      //   .hero-content-form {
+      //     max-width: 550px;
+      //     margin: 0 auto;
+
+      //     input[type="text"] {
+      //       outline: none;
+      //       width: 60%;
+      //       padding: 0 15px;
+      //       height: 50px;
+      //       box-sizing: border-box;
+      //       background: #f5f8ff;
+      //       border: 2px solid #333;
+      //       font-size: 15px;
+      //       float: left;
+      //       letter-spacing: 1px;
+      //       font-weight: 500;
+      //       color: #333;
+      //       font-family: 'Spartan', sans-serif;
+      //   }
+      //   input[type="submit"] {
+      //     outline: none;
+      //     width: 40%;
+      //     min-height: 50px;
+      //     padding: 10.2px 0;
+      //     box-sizing: border-box;
+      //     background: #ffa500;
+      //     color: #fff;
+      //     border: none;
+      //     font-size: 20px;
+      //     font-weight: 600;
+      //     font-family: 'Spartan', sans-serif;
+      //     letter-spacing: 0.7px;
+      //     cursor: pointer;
+      //     transition: .1s ease-in;
+      //     -webkit-transition: .1s ease-in;
+      //     -moz-transition: .1s ease-in;
+      //     -o-transition: .1s ease-in;
+      //     -ms-transition: .1s ease-in;
+      // }
+      // }
+      // ul {
+      //   margin: 10px 0;
+      //   li {
+      //       display: initial;
+      //       margin-right: 20px;
+      //       font-size: 12px;
+      //           font-weight: 600;
+      //           .tick-img {
+      //               width: 1.5%;
+      //               padding: 2px;
+      //           }
+      //     }
+      //  }
+      }    
+    }
+  }
+}
+
+
+@media only screen and (min-width: 991px) {
+  .footer-main {
+    background: #fff;
+    padding: 50px 0;
+    .custom-container {
+      max-width: 1170px;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      box-sizing: border-box;
+      .footer-content{
+        text-align: center;
+        h2{
+          color: #ffa500;
+          font-size: 40px;
+          margin-bottom: 40px;
+        }
+        .email-form-container{
+          width: 100%;
+        }
+    //   .hero-content-form {
+    //     max-width: 550px;
+    //     margin: 0 auto;
+
+    //     input[type="text"] {
+    //       outline: none;
+    //       width: 60%;
+    //       padding: 0 15px;
+    //       height: 50px;
+    //       box-sizing: border-box;
+    //       background: #f5f8ff;
+    //       border: 2px solid #333;
+    //       font-size: 15px;
+    //       float: left;
+    //       letter-spacing: 1px;
+    //       font-weight: 500;
+    //       color: #333;
+    //       font-family: 'Spartan', sans-serif;
+      //   }
+      //   input[type="submit"] {
+      //     outline: none;
+      //     width: 40%;
+      //     min-height: 50px;
+      //     padding: 10.2px 0;
+      //     box-sizing: border-box;
+      //     background: #ffa500;
+      //     color: #fff;
+      //     border: none;
+      //     font-size: 20px;
+      //     font-weight: 600;
+      //     font-family: 'Spartan', sans-serif;
+      //     letter-spacing: 0.7px;
+      //     cursor: pointer;
+      //     transition: .1s ease-in;
+      //     -webkit-transition: .1s ease-in;
+      //     -moz-transition: .1s ease-in;
+      //     -o-transition: .1s ease-in;
+      //     -ms-transition: .1s ease-in;
+      // }
+      // }
+      // ul {
+      //   margin: 10px 0;
+      //   li {
+      //       display: initial;
+      //       margin-right: 20px;
+      //       font-size: 12px;
+      //           font-weight: 600;
+      //           .tick-img {
+      //               width: 1.5%;
+      //               padding: 2px;
+      //           }
+      //     }
+      //  }
+        }    
+      }
+    }
+  }
+
+@media only screen and (max-width: 991px) {
+  .footer-main {
+    background: #fff;
+    padding: 50px 0;
+    .custom-container {
+      max-width: 1170px;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      box-sizing: border-box;
+      .footer-content{
+        text-align: center;
+        h2{
+          color: #ffa500;
+          font-size: 25px;
+          margin-bottom: 15px;
+          font-family: 'Spartan', sans-serif;
+        }
+        .email-form-container{
+          width: 100%;
+        }
+      //   .hero-content-form {
+      //     max-width: 550px;
+      //     margin: 0 auto;
+  
+      //     input[type="text"] {
+      //       outline: none;
+      //       width: 60%;
+      //       padding: 0 15px;
+      //       height: 50px;
+      //       box-sizing: border-box;
+      //       background: #f5f8ff;
+      //       border: 2px solid #333;
+      //       font-size: 15px;
+      //       float: left;
+      //       letter-spacing: 1px;
+      //       font-weight: 500;
+      //       color: #333;
+      //       font-family: 'Spartan', sans-serif;
+      //   }
+      //   input[type="submit"] {
+      //     outline: none;
+      //     width: 40%;
+      //     min-height: 50px;
+      //     padding: 10.2px 0;
+      //     box-sizing: border-box;
+      //     background: #ffa500;
+      //     color: #fff;
+      //     border: none;
+      //     font-size: 12px;
+      //     font-weight: 600;
+      //     font-family: 'Spartan', sans-serif;
+      //     letter-spacing: 0.7px;
+      //     cursor: pointer;
+      //     transition: .1s ease-in;
+      //     -webkit-transition: .1s ease-in;
+      //     -moz-transition: .1s ease-in;
+      //     -o-transition: .1s ease-in;
+      //     -ms-transition: .1s ease-in;
+      // }
+      // }
+      // ul {
+      //   margin: 10px 0;
+      //   li {
+      //       display: initial;
+      //       margin-right: 5px;
+      //       font-size: 8px;
+      //           font-weight: 600;
+      //           .tick-img {
+      //               width: 1.5%;
+      //               padding: 2px;
+      //           }
+      //     }
+      //  }
+      }    
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer-main {
+    background: #fff;
+    padding: 50px 0;
+    .custom-container {
+      max-width: 1170px;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      box-sizing: border-box;
+      .footer-content{
+        text-align: center;
+        h2{
+          color: #ffa500;
+          font-size: 25px;
+          margin-bottom: 15px;
+          font-family: 'Spartan', sans-serif;
+        }
+        .email-form-container{
+          width: 100%;
+        }
+      //   .hero-content-form {
+      //     max-width: 550px;
+      //     margin: 0 auto;
+  
+      //     input[type="text"] {
+      //       outline: none;
+      //       width: 60%;
+      //       padding: 0 15px;
+      //       height: 50px;
+      //       box-sizing: border-box;
+      //       background: #f5f8ff;
+      //       border: 2px solid #333;
+      //       font-size: 15px;
+      //       float: left;
+      //       letter-spacing: 1px;
+      //       font-weight: 500;
+      //       color: #333;
+      //       font-family: 'Spartan', sans-serif;
+      //   }
+      //   input[type="submit"] {
+      //     outline: none;
+      //     width: 40%;
+      //     min-height: 50px;
+      //     padding: 10.2px 0;
+      //     box-sizing: border-box;
+      //     background: #ffa500;
+      //     color: #fff;
+      //     border: none;
+      //     font-size: 12px;
+      //     font-weight: 600;
+      //     font-family: 'Spartan', sans-serif;
+      //     letter-spacing: 0.7px;
+      //     cursor: pointer;
+      //     transition: .1s ease-in;
+      //     -webkit-transition: .1s ease-in;
+      //     -moz-transition: .1s ease-in;
+      //     -o-transition: .1s ease-in;
+      //     -ms-transition: .1s ease-in;
+      // }
+      // }
+      // ul {
+      //   margin: 10px 0;
+      //   padding-left: 0;
+      //   li {
+      //       display: initial;
+      //       margin-right: 5px;
+      //       font-size: 8px;
+      //           font-weight: 600;
+      //           .tick-img {
+      //             width: 2%;
+      //             padding: 0px;
+      //           }
+      //     }
+      //  }
+      }    
+    }
+  }
+}

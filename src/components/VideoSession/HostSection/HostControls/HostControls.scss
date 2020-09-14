@@ -1,0 +1,134 @@
+.host-controls{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .controls-grid{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    .option{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #C0C0C0;
+      cursor: pointer;
+    }
+    .edit-container{
+      background-color: #ffb347;
+    }
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  .host-controls{
+    padding: 10px;
+    .controls-grid{
+      grid-gap: 0 10px;
+      font-size: 25px;
+      .option{
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .host-controls{
+    padding: 10px;
+    .controls-grid{
+      grid-gap: 0 10px;
+      font-size: 22px;
+      .option{
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .host-controls{
+    padding: 10px;
+    .controls-grid{
+      grid-gap: 0 10px;
+      font-size: 22px;
+      .option{
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .host-controls{
+    padding: 8px;
+    .controls-grid{
+      grid-gap: 0 10px;
+      font-size: 20px;
+      .option{
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  .host-controls{
+    padding: 8px;
+    .controls-grid{
+      grid-gap: 0 10px;
+      font-size: 20px;
+      .option{
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .host-controls{
+    padding: 8px;
+    .controls-grid{
+      grid-gap: 0 10px;
+      font-size: 18px;
+      .option{
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .host-controls{
+    padding: 7px;
+    .controls-grid{
+      grid-gap: 0 5px;
+      font-size: 17px;
+      .option{
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .host-controls{
+    padding: 7px;
+    .controls-grid{
+      grid-gap: 0 5px;
+      font-size: 18px;
+      .option{
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}
