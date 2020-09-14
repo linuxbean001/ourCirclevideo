@@ -16,7 +16,9 @@ import {
   deleteEventSuccess,
   deleteEventFailure,
   submitEmailSuccess,
-  submitEmailFailure 
+  submitEmailFailure ,
+  submitResetPasswordSuccess,
+  submitResetPasswordFailure
 } from './user.actions';
 import { setLoading, openGeneralModal } from '../general/general.actions';
 
@@ -235,6 +237,36 @@ export function* submitEmail({payload: {email}}){
   }
 }
 
+
+
+export function* resetPswword({payload: {email}}){
+  try{
+    yield put(setLoading(true));
+    const data = yield fetch(SERVER_URL + '/reset-password', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        email: email.toLowerCase()
+      })
+    })
+    .then(response => {
+      if (response.ok){
+        return response.json();
+      }
+      else{
+        throw new Error('error email not exist');
+      }
+    })
+    yield put(setLoading(false));
+    yield put(submitResetPasswordSuccess(data))
+
+  } catch(error){
+    yield put(setLoading(false));
+    yield put(submitResetPasswordFailure(error))
+  }
+}
+
+
 export function* onSignInStart(){
   yield takeLatest(UserActionTypes.SIGN_IN_START, signIn)
 }
@@ -256,6 +288,10 @@ export function* deleteEventStart(){
 export function* submitEmailStart(){
   yield takeLatest(UserActionTypes.SUBMIT_EMAIL_START, submitEmail)
 }
+export function* submitResetpasswordStart(){
+  yield takeLatest(UserActionTypes.SUBMIT_RESETPASSWORD_SUCCESS, resetPswword)
+}
+
 
 export function* userSagas() {
   yield all([
@@ -265,6 +301,7 @@ export function* userSagas() {
     call(editProfileStart),
     call(changeActiveStateStart),
     call(deleteEventStart),
-    call(submitEmailStart)
+    call(submitEmailStart),
+    call(submitResetpasswordStart)
   ])
 }

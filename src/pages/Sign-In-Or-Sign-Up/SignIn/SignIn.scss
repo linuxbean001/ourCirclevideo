@@ -4,7 +4,12 @@
   .buttons {
     display: flex;
     justify-content: space-between;
+    .reset_link {
+      color: #ffb347;
+      cursor: pointer;
+    }
   }
+
 }
 
 

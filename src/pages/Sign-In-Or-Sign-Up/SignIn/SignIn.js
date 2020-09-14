@@ -4,7 +4,7 @@ import { createStructuredSelector } from 'reselect';
 
 import FormInput from '../../../components/FormInput/FormInput';
 import CustomButton from '../../../components/CustomButton/CustomButton';
-
+import ResetPassword from '../ResetPassword/ResetPassword';
 import { withRouter } from 'react-router-dom';
 import { signInStart } from '../../../redux/user/user.actions.js';
 import { selectUser } from '../../../redux/user/user.selectors';
@@ -21,6 +21,8 @@ const SignIn = ({
     email: '',
     password: ''
   })
+
+  const [formHidden, setFormHidden] = useState(false);
 
   const handleChange = event => {
     const { value, name } = event.target;
@@ -55,8 +57,14 @@ const SignIn = ({
     signInStart(email, password);
   } 
 
-
+  const handleToggle = () =>
+    setTimeout(
+      () => setFormHidden(true),
+      1000
+    );
   return(
+    <div>
+      {formHidden == false ? (
     <div className='sign-in'>
       <h2>I already have an account</h2>
       <span>Sign in with your email and password</span>
@@ -87,8 +95,14 @@ const SignIn = ({
           > 
             Sign In 
           </CustomButton>
+          <a className="reset_link" onClick={handleToggle}> Reset Password </a>
         </div>
       </form>
+    </div>) : (
+    <div className='reset-password'>
+      <ResetPassword />
+    </div>
+    ) }
     </div>
   )
 }

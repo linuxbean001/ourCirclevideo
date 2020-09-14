@@ -81,6 +81,7 @@ AOS.init();
               />
             )}
           />
+          <Route exact path='/reset-password' component={Test} />
           <Route exact path='/test' component={Test} />
         </Switch>
         {

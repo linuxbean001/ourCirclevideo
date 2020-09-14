@@ -112,3 +112,12 @@ export const submitEmailFailure = error => ({
   type: UserActionTypes.SUBMIT_EMAIL_FAILURE,
   payload: error
 })
+
+export const submitResetPasswordSuccess = () => ({
+  type: UserActionTypes.SUBMIT_RESETPASSWORD_SUCCESS
+})
+
+export const submitResetPasswordFailure = error => ({
+  type: UserActionTypes.SUBMIT_RESETPASSWORD_FAILURE,
+  payload: error
+})
