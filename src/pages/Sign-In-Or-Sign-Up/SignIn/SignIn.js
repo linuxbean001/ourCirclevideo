@@ -8,6 +8,7 @@ import ResetPassword from '../ResetPassword/ResetPassword';
 import { withRouter } from 'react-router-dom';
 import { signInStart } from '../../../redux/user/user.actions.js';
 import { selectUser } from '../../../redux/user/user.selectors';
+import SocialButton from '../SocialLogin/SocialLogin'
 
 import './SignIn.scss';
 
@@ -32,6 +33,16 @@ const SignIn = ({
     })
   }
 
+
+  const handleSocialLogin = (user) => {
+    console.log(user)
+  }
+   
+  const handleSocialLoginFailure = (err) => {
+    console.error(err)
+  }
+ 
+  
   useEffect(() => {
     if (user.error !== null){
       if (user.error.message === 'error signing in'){
@@ -98,6 +109,40 @@ const SignIn = ({
           <a className="reset_link" onClick={handleToggle}> Reset Password </a>
         </div>
       </form>
+
+      <hr class="hr-text" data-content="OR"/>
+
+      <SocialButton
+      provider='facebook'
+      appId='366550800348178'
+      onLoginSuccess={handleSocialLogin}
+      onLoginFailure={handleSocialLoginFailure}
+      className="facebook-connect social-button"
+    >
+      Login with Facebook
+    </SocialButton>
+
+    <SocialButton
+          provider='google'
+          appId='844845104372-h8htjngp1os1tb79nksc54dq7tko4r8n.apps.googleusercontent.com'
+          onLoginSuccess={handleSocialLogin}
+          onLoginFailure={handleSocialLoginFailure}
+          className="google-connect social-button"
+        >
+          Login with Google
+    </SocialButton>
+
+    <SocialButton
+          provider='linkedin'
+          appId='7775kne2guetd0'
+          onLoginSuccess={handleSocialLogin}
+          onLoginFailure={handleSocialLoginFailure}
+          className="linkedin-connect social-button"
+        >
+          Login with LinkedIn
+    </SocialButton>
+
+
     </div>) : (
     <div className='reset-password'>
       <ResetPassword />

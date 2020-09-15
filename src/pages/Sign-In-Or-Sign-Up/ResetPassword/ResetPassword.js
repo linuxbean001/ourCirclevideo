@@ -13,7 +13,7 @@ import './ResetPassword.scss';
 
 const ResetPassword = ({
   submitResetPasswordSuccess,
-  email
+  user
 }) => {
 
     const [email, setEmail] = useState('');
@@ -57,7 +57,7 @@ const ResetPassword = ({
 }
 
 const mapStateToProps = createStructuredSelector({
-    email: selectEmail,
+  user: selectEmail,
 })
 
 const mapDispatchToProps = dispatch => ({
